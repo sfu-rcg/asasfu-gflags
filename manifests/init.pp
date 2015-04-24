@@ -32,4 +32,8 @@ class gflags (
     ensure          => "${ensure_version}",
     install_options => { "--enablerepo" => "${required_repos}" },
   }
+  package { 'gflags-devel':
+    ensure          => "${ensure_version}",
+    install_options => { "--enablerepo" => "${required_repos}" },
+  }
 }
